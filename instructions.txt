@@ -1,0 +1,5 @@
+1. Use 'CellMarkerThresholding' repo to generate the thresholds for each marker
+2. fill the thresholds in the 'main.py' (also specify criteria for each phenotype here), and use the main.py to generate csv file with algorithm-based phenotypes
+3. use 'digitalpathology' repo: population_data.py to do the interaction and distribution anlysis.
+    e.g.: -i D:\Chang_files\work_records\Sara_results\G4\individual_addtype -o D:\Chang_files\work_records\Sara_results\G4\ClusterID_based_Phenotype_circle_50 -q "CAIX+ Tumour cells" --interaction_method circle
+4. Note that the cell files used in the inputs 'D:\Chang_files\work_records\Sara_results\G4\individual_addtype' should be individual sample csvs, do not mix many samples in one csv, can use split_csv.py in this repo to split individual csvs.
