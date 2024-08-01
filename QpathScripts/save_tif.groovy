@@ -7,7 +7,7 @@ if (annotations.isEmpty()) {
 def annotation = annotations[0]
 
 // Define output path
-def outputPath = 'D:/Chang_files/workspace/Qupath_proj/hdk_codex/selected_mihc.tif'
+def outputPath = 'D:/Chang_files/workspace/Qupath_proj/hdk_codex/selected_hema.tif'
 
 // Get current image data and server
 def imageData = getCurrentImageData()
