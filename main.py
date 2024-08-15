@@ -16,7 +16,7 @@ def process_cell_data(file_path, thresholds, output_directory):
 
     # 3. Judge the positive/negative status of every marker for each cell
     for marker, threshold in thresholds.items():
-        column_name = f"{marker}-Cell-Mean"
+        column_name = f"{marker}_Cell_Mean"
         status_column = f"{marker}_AutoThreStatus"
 
         # 4. Add a column for each marker to store their positive/negative status
@@ -29,10 +29,10 @@ def process_cell_data(file_path, thresholds, output_directory):
                 row['CD88_AutoThreStatus'] == 'Negative' and
                 row['SIRPa_AutoThreStatus'] == 'Negative' and
                 row['CD4_AutoThreStatus'] == 'Negative' and
-                row['HLA-DR_AutoThreStatus'] in ['Positive', 'Negative'] and
+                row['HLA_DR_AutoThreStatus'] in ['Positive', 'Negative'] and
                 row['CD56_AutoThreStatus'] == 'Negative' and
                 row['CD11c_AutoThreStatus'] in ['Positive', 'Negative'] and
-                row['PD-1_AutoThreStatus'] in ['Positive', 'Negative'] and
+                row['PD_1_AutoThreStatus'] in ['Positive', 'Negative'] and
                 row['CD3_AutoThreStatus'] == 'Positive' and
                 row['CD45_AutoThreStatus'] == 'Positive' and
                 row['CD10_AutoThreStatus'] == 'Negative' and
@@ -48,10 +48,10 @@ def process_cell_data(file_path, thresholds, output_directory):
               row['CD88_AutoThreStatus'] == 'Negative' and
               row['SIRPa_AutoThreStatus'] == 'Negative' and
               row['CD4_AutoThreStatus'] == 'Positive' and
-              row['HLA-DR_AutoThreStatus'] == 'Negative' and
+              row['HLA_DR_AutoThreStatus'] == 'Negative' and
               row['CD56_AutoThreStatus'] == 'Negative' and
               row['CD11c_AutoThreStatus'] == 'Negative' and
-              row['PD-1_AutoThreStatus'] in ['Positive', 'Negative'] and
+              row['PD_1_AutoThreStatus'] in ['Positive', 'Negative'] and
               row['CD3_AutoThreStatus'] == 'Positive' and
               row['CD45_AutoThreStatus'] == 'Positive' and
               row['CD10_AutoThreStatus'] == 'Negative' and
@@ -67,10 +67,10 @@ def process_cell_data(file_path, thresholds, output_directory):
               row['CD88_AutoThreStatus'] == 'Negative' and
               row['SIRPa_AutoThreStatus'] == 'Negative' and
               row['CD4_AutoThreStatus'] == 'Negative' and
-              row['HLA-DR_AutoThreStatus'] == 'Positive' and
+              row['HLA_DR_AutoThreStatus'] == 'Positive' and
               row['CD56_AutoThreStatus'] == 'Negative' and
               row['CD11c_AutoThreStatus'] == 'Positive' and
-              row['PD-1_AutoThreStatus'] in ['Positive', 'Negative'] and
+              row['PD_1_AutoThreStatus'] in ['Positive', 'Negative'] and
               row['CD3_AutoThreStatus'] == 'Negative' and
               row['CD45_AutoThreStatus'] == 'Positive' and
               row['CD10_AutoThreStatus'] == 'Negative' and
@@ -86,10 +86,10 @@ def process_cell_data(file_path, thresholds, output_directory):
               row['CD88_AutoThreStatus'] in ['Positive', 'Negative'] and
               row['SIRPa_AutoThreStatus'] == 'Positive' and
               row['CD4_AutoThreStatus'] == 'Negative' and
-              row['HLA-DR_AutoThreStatus'] == 'Positive' and
+              row['HLA_DR_AutoThreStatus'] == 'Positive' and
               row['CD56_AutoThreStatus'] == 'Negative' and
               row['CD11c_AutoThreStatus'] == 'Positive' and
-              row['PD-1_AutoThreStatus'] in ['Positive', 'Negative'] and
+              row['PD_1_AutoThreStatus'] in ['Positive', 'Negative'] and
               row['CD3_AutoThreStatus'] == 'Negative' and
               row['CD45_AutoThreStatus'] == 'Positive' and
               row['CD10_AutoThreStatus'] == 'Negative' and
@@ -105,10 +105,10 @@ def process_cell_data(file_path, thresholds, output_directory):
               row['CD88_AutoThreStatus'] == 'Positive' and
               row['SIRPa_AutoThreStatus'] == 'Negative' and
               row['CD4_AutoThreStatus'] == 'Negative' and
-              row['HLA-DR_AutoThreStatus'] == 'Positive' and
+              row['HLA_DR_AutoThreStatus'] == 'Positive' and
               row['CD56_AutoThreStatus'] == 'Negative' and
               row['CD11c_AutoThreStatus'] in ['Positive', 'Negative'] and
-              row['PD-1_AutoThreStatus'] in ['Positive', 'Negative'] and
+              row['PD_1_AutoThreStatus'] in ['Positive', 'Negative'] and
               row['CD3_AutoThreStatus'] == 'Negative' and
               row['CD45_AutoThreStatus'] == 'Positive' and
               row['CD10_AutoThreStatus'] == 'Negative' and
@@ -124,10 +124,10 @@ def process_cell_data(file_path, thresholds, output_directory):
               row['CD88_AutoThreStatus'] == 'Negative' and
               row['SIRPa_AutoThreStatus'] == 'Negative' and
               row['CD4_AutoThreStatus'] == 'Negative' and
-              row['HLA-DR_AutoThreStatus'] == 'Positive' and
+              row['HLA_DR_AutoThreStatus'] == 'Positive' and
               row['CD56_AutoThreStatus'] == 'Negative' and
               row['CD11c_AutoThreStatus'] in ['Positive', 'Negative'] and
-              row['PD-1_AutoThreStatus'] in ['Positive', 'Negative'] and
+              row['PD_1_AutoThreStatus'] in ['Positive', 'Negative'] and
               row['CD3_AutoThreStatus'] == 'Negative' and
               row['CD45_AutoThreStatus'] == 'Positive' and
               row['CD10_AutoThreStatus'] == 'Negative' and
@@ -143,10 +143,10 @@ def process_cell_data(file_path, thresholds, output_directory):
               row['CD88_AutoThreStatus'] == 'Negative' and
               row['SIRPa_AutoThreStatus'] == 'Negative' and
               row['CD4_AutoThreStatus'] == 'Negative' and
-              row['HLA-DR_AutoThreStatus'] == 'Negative' and
+              row['HLA_DR_AutoThreStatus'] == 'Negative' and
               row['CD56_AutoThreStatus'] == 'Negative' and
               row['CD11c_AutoThreStatus'] == 'Negative' and
-              row['PD-1_AutoThreStatus'] in ['Positive', 'Negative'] and
+              row['PD_1_AutoThreStatus'] in ['Positive', 'Negative'] and
               row['CD3_AutoThreStatus'] == 'Negative' and
               row['CD45_AutoThreStatus'] == 'Negative' and
               row['CD10_AutoThreStatus'] in ['Positive', 'Negative'] and
@@ -162,10 +162,10 @@ def process_cell_data(file_path, thresholds, output_directory):
               row['CD88_AutoThreStatus'] == 'Negative' and
               row['SIRPa_AutoThreStatus'] == 'Negative' and
               row['CD4_AutoThreStatus'] == 'Negative' and
-              row['HLA-DR_AutoThreStatus'] == 'Negative' and
+              row['HLA_DR_AutoThreStatus'] == 'Negative' and
               row['CD56_AutoThreStatus'] == 'Negative' and
               row['CD11c_AutoThreStatus'] == 'Negative' and
-              row['PD-1_AutoThreStatus'] in ['Positive', 'Negative'] and
+              row['PD_1_AutoThreStatus'] in ['Positive', 'Negative'] and
               row['CD3_AutoThreStatus'] == 'Negative' and
               row['CD45_AutoThreStatus'] == 'Positive' and
               row['CD10_AutoThreStatus'] == 'Negative' and
@@ -181,10 +181,10 @@ def process_cell_data(file_path, thresholds, output_directory):
               row['CD88_AutoThreStatus'] == 'Negative' and
               row['SIRPa_AutoThreStatus'] == 'Negative' and
               row['CD4_AutoThreStatus'] == 'Negative' and
-              row['HLA-DR_AutoThreStatus'] == 'Negative' and
+              row['HLA_DR_AutoThreStatus'] == 'Negative' and
               row['CD56_AutoThreStatus'] == 'Positive' and
               row['CD11c_AutoThreStatus'] == 'Negative' and
-              row['PD-1_AutoThreStatus'] in ['Positive', 'Negative'] and
+              row['PD_1_AutoThreStatus'] in ['Positive', 'Negative'] and
               row['CD3_AutoThreStatus'] == 'Negative' and
               row['CD45_AutoThreStatus'] == 'Positive' and
               row['CD10_AutoThreStatus'] == 'Negative' and
@@ -200,10 +200,10 @@ def process_cell_data(file_path, thresholds, output_directory):
               row['CD88_AutoThreStatus'] == 'Negative' and
               row['SIRPa_AutoThreStatus'] == 'Negative' and
               row['CD4_AutoThreStatus'] == 'Negative' and
-              row['HLA-DR_AutoThreStatus'] == 'Negative' and
+              row['HLA_DR_AutoThreStatus'] == 'Negative' and
               row['CD56_AutoThreStatus'] == 'Negative' and
               row['CD11c_AutoThreStatus'] == 'Negative' and
-              row['PD-1_AutoThreStatus'] in ['Positive', 'Negative'] and
+              row['PD_1_AutoThreStatus'] in ['Positive', 'Negative'] and
               row['CD3_AutoThreStatus'] == 'Negative' and
               row['CD45_AutoThreStatus'] == 'Negative' and
               row['CD10_AutoThreStatus'] == 'Negative' and
@@ -265,9 +265,9 @@ thresholds = {
     'CD4': 9156.68838,
     'SIRPa': 6835.448997,
     'CD56': 16401.92406,
-    'HLA-DR': 4028.927883,
+    'HLA_DR': 4028.927883,
     'CD11c': 6263.882393,
-    'PD-1': 6106.16637,
+    'PD_1': 6106.16637,
     'CD3': 8572.11186,
     'CD45': 14755.30625,
     'CD10': 16669.86499,
@@ -286,7 +286,7 @@ thresholds = {
     'CD4': 1138.599426,
     'SIRPa': 624.0407051,
     'CD56': 743.9141026,
-    'HLA-DR': 933.0858773,
+    'HLA_DR': 933.0858773,
     'CD11c': 523.5916651,
     'PD-1': 432.7674863,
     'CD3': 488.6399234,
@@ -363,26 +363,29 @@ thresholds = {
 }
 '''
 thresholds = {
-    'CD8': 10317.64268,
-    'CD88': 13995.58185,
-    'CD4': 15427.97747,
-    'SIRPa': 5977.378833,
-    'CD56': 8328.615367,
-    'HLA-DR': 2345.93224,
-    'CD11c': 7208.247887,
-    'PD-1': 7288.32485,
-    'CD3': 9531.71975,
-    'CD45': 17199.79403,
-    'CD10': 1650.185347,
-    'CD31': 19640.15181,
-    'CAIX': 14923.01188,
-    'CD20': 3131.473063,
-    'IRF8': 2675.92375,
-    'CD68': 2351.370313
+    'CD8': 12180.29509,
+    'CD88': 8785.424343,
+    'CD4': 5393.780423,
+    'SIRPa': 11117.61695,
+    'CD56': 7318.747543,
+    'HLA_DR': 6431.605307,
+    'CD11c': 1949.798476,
+    'PD_1': 5351.71697,
+    'CD3': 5864.93412,
+    'CD45': 9591.893443,
+    'CD10': 38.03025,
+    'CD31': 19577.61131,
+    'CAIX': 19879.3941,
+    'CD20': 1585.558666,
+    'IRF8': 2197.568567,
+    'CD68': 8583.052377
 }
 
-cell_file_folder = r'D:\Chang_files\workspace\Github_workspace\G3_PROCESSING\csv_files\G4'
-file_name = 'Tumour_Grade_4.csv'
+
+
+
+cell_file_folder = r'D:\Chang_files\work_records\Sara_results_2\G4\individual_addthreshold'
+file_name = 'AU94843.csv'
 cell_file_path = os.path.join(cell_file_folder, file_name)
-output_directory = r'D:\Chang_files\work_records\Sara_results\G4'
+output_directory = r'D:\Chang_files\work_records\Sara_results_2\G4\add_phenotype'
 process_cell_data(cell_file_path, thresholds, output_directory)
