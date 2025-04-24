@@ -2,8 +2,8 @@ import os
 import pandas as pd
 
 # Define the input folder containing the CSV files
-input_folder = r'D:\Chang_files\work_records\Sara_results_2\G4\individual_addtype'
-output_folder = r'D:\Chang_files\work_records\Sara_results_2\G4\individual_addtype_By_tumour'
+input_folder = r'D:\Chang_files\work_records\Sara_results_4\graded_files'
+output_folder = r'D:\Chang_files\work_records\Sara_results_4\graded_files\individual_files'
 
 # Ensure the output folder exists
 os.makedirs(output_folder, exist_ok=True)
@@ -16,7 +16,7 @@ for filename in os.listdir(input_folder):
         data = pd.read_csv(file_path)
 
         # Specify the column to split by
-        column_to_split_by = 'Tumour.NonTumour'
+        column_to_split_by = 'Sample.ID'
 
         # Get the base name without the extension
         base_filename = os.path.splitext(filename)[0]
